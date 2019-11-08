@@ -1,0 +1,13 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+*.nb.html
+
+data/
+cache/
+data_mapping.yml
+
+*.bin
+*.rds
