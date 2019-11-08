@@ -54,6 +54,10 @@ DataPath("dir1", "file.mtx")
 ```
 > [1] "/home/user/data/Epilepsy/dir1/file.mtx"
 
+### Initialize project
+
+To create the directories, run `CreateFolders` inside your project package
+
 ### Manual paths to datasets
 
 It's often the case that some long paths are used more ofthen then the rest. Let's say,
