@@ -98,6 +98,7 @@ CreateFolders <- function(force=FALSE) {
     out="This folder contains output files, relevant for the publication, such as cell type annotation or figures")
 
   for (n in names(path.funcs)) {
+    dir.create(path.funcs[[n]](), showWarnings=F, recursive=T)
     readme.file <- path.funcs[[n]]("README.md")
     if (file.exists(readme.file)) {
       warning("File '", readme.file, "' already exists")
