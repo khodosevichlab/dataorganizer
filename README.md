@@ -41,7 +41,7 @@ folders:
   cache: ~/cache/Epilepsy
 ```
 
-To access files in the folders one of the followint functions should be used:
+To access files in the folders one of the following functions should be used:
 - `DataPath(path)`
 - `MetadataPath(path)`
 - `OutputPath(path)`
