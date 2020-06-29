@@ -3,7 +3,7 @@
 ## Installation
 
 ```R
-devtools::install("khodosevichlab/dataorganizer")
+devtools::install_github("khodosevichlab/dataorganizer")
 ```
 
 ## Motivation
