@@ -15,7 +15,7 @@ tryReadFolderPath <- function(folder, mapping.file=NULL) {
   yml <- yaml::read_yaml(mapping.file)
   folder.info <- yml[["folders"]]
   if (!is.null(folder.info) && !is.null(folder.info[[folder]]))
-    return(path.expand(folder.info[[folder]]))
+    return(fromRoot(path.expand(folder.info[[folder]])))
 
   return(fromRoot(folder))
 }
