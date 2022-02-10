@@ -117,3 +117,18 @@ CreateFolders <- function(force=FALSE) {
     cat("# folders:\n\n# datasets:\n", file=mapping.file)
   }
 }
+
+#' Read RDS file or create it if it does not exist using `create.fun()`
+#' @param path path to the cached file
+#' @param create.fun function to create the object if it does not exist
+#' @param force force re-creating the object ignoring the existing one
+#'
+#' @export
+ReadOrCreate <- function(path, create.fun, force=FALSE) {
+  if (!force && file.exists(path))
+    return(readr::read_rds(path))
+
+  res <- create.fun()
+  readr::write_rds(res, path)
+  return(res)
+}

@@ -1,7 +1,7 @@
 Package: dataorganizer
 Type: Package
 Title: Organization of folders for research projects in R
-Version: 0.1.1
+Version: 0.1.2
 Authors@R: c(person("Viktor", "Petukhov", email = "viktor.s.petukhov@ya.ru", role = c("cre", "aut")))
 Description: Organization of folders for research projects in R
 License: MIT + file LICENSE
@@ -10,4 +10,4 @@ LazyData: true
 Imports: 
     yaml,
     rprojroot (>= 2.0.2)
-RoxygenNote: 6.1.1
+RoxygenNote: 7.1.1
