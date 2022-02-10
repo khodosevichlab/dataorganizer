@@ -3,8 +3,12 @@
 ## Installation
 
 ```R
-devtools::install("khodosevichlab/dataorganizer")
+devtools::install_github("khodosevichlab/dataorganizer")
 ```
+
+## Motivation
+
+Accessing data from the analysis notebooks or scripts you can use either full paths or have it relative to the script location. Global paths require changing the corresponding part of the scripts for each user. Relative paths require each user to have the same folder structure, but it isn't bad. Troubles come when you want to move your notebook to a different folder or to copy-paste the part of code into another vignette. This problem is also described in [Stop the working directory insanity](https://gist.github.com/jennybc/362f52446fe1ebc4c49f#problem-statement) proposal. This package allows (i) having shorter aliases for accessing most used paths and (ii) have different folder structure for different users.
 
 ## Usage
 
@@ -41,7 +45,7 @@ folders:
   cache: ~/cache/Epilepsy
 ```
 
-To access files in the folders one of the followint functions should be used:
+To access files in the folders one of the following functions should be used:
 - `DataPath(path)`
 - `MetadataPath(path)`
 - `OutputPath(path)`
